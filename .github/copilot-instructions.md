@@ -35,11 +35,35 @@ For each blog post with code:
 
 ## Writing Style
 
-- Technical but accessible
-- Include practical examples
-- Focus on AI-assisted development workflows
-- Emphasize real-world applications
-- Include performance considerations
+### Tone and Voice
+- **Casual and clever**: Smart, witty, with energetic enthusiasm for solving technical problems
+- **Conversational but technical**: Use "you" and first person, avoid overly formal academic tone
+- **Problem-focused hooks**: Start with real pain points and frustrations developers actually face
+- **Manic energy**: Show excitement about elegant solutions to annoying problems
+
+### Content Structure and Flow
+- **Problem → Practice → Theory**: Always start with practical examples, build to deeper technical concepts
+- **Progressive complexity**: Begin punchy and accessible, get progressively more technical as the post develops
+- **One complete example**: Build a single working project from setup to testing within each post
+- **Real-world context**: Introduce concepts through actual scenarios and pain points developers encounter
+
+### Code Integration
+- **Show, don't just tell**: Include actual code snippets from the working examples throughout the narrative
+- **Reference actual files**: Pull code directly from the `/code/` directory files being discussed
+- **Incremental revelation**: Reveal code complexity gradually as the explanation deepens
+- **Working examples**: Every code snippet should be from runnable, tested implementations
+
+### Technical Approach
+- **Assume basic competence**: Readers have fundamental knowledge of the tools/languages being used
+- **Brief tool explanations**: Quick context on libraries/frameworks but don't over-explain basics
+- **Focus on integration patterns**: Emphasize how different tools work together effectively
+- **Learning-focused**: Code examples are for understanding, not production deployment
+
+### Section Pacing
+- **Intro sections**: Short, punchy, problem-statement focused (150-250 words)
+- **Setup sections**: More detailed but still accessible (300-400 words)  
+- **Implementation sections**: Full technical depth with detailed code walkthroughs (600-800 words)
+- **Conclusion sections**: Lessons learned and practical takeaways (200-300 words)
 
 ## Jekyll Specific
 
