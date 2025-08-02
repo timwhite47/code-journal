@@ -27,6 +27,8 @@ For each blog post with code:
 
 1. Create directory: `/code/YYYY-MM-DD-post-title/`
 2. Include: main implementation, tests, README, requirements/dependencies
+    * For python, use **only** poetry for dependencies
+    * For Rust, use `Cargo.toml` and cargo commands
 3. Make code runnable and well-documented
 4. Add type hints and docstrings for Python code
 5. Include error handling and logging
@@ -47,6 +49,14 @@ For each blog post with code:
 - Use excerpts for post previews
 
 ## Development Workflow
+
+- User gives description of blog post they want to make, with technical goals.
+- AI helps user create working code in `/code/` directory (this will be an interactive process in concert with the user)
+- AI creates an outline of a proposed blog post in `outlines/` directory based on the user's description and the code generated.
+- User gives feedback to and modifies the outline.
+- Only when User gives **explicit permission** write the blog post.
+
+## Technical Requirements
 
 - Test locally with `bundle exec jekyll serve`
 - Code examples should be self-contained and runnable
