@@ -1,0 +1,25 @@
+*.gem
+.bundle
+.sass-cache
+_site
+Gemfile.lock
+.jekyll-cache
+.jekyll-metadata
+vendor/
+.DS_Store
+
+# Code example outputs
+code/**/output/
+code/**/*.pyc
+code/**/__pycache__/
+code/**/target/
+code/**/node_modules/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+Thumbs.db

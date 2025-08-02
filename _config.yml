@@ -1,0 +1,72 @@
+# Jekyll Configuration for timwhite.ninja blog
+title: "Tim White's Programming Blog"
+description: "AI Coding, Python/Rust, Data Engineering & Data Science"
+url: "https://timwhite.ninja"
+baseurl: ""
+
+# Author information
+author:
+  name: "Tim White"
+  github: "timwhite47"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Kramdown settings
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+
+# Pagination
+paginate: 10
+paginate_path: "/page:num/"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Tim White"
+      show_excerpts: true
+
+# Social links
+github_username: timwhite47
+
+# RSS feed
+feed:
+  posts_limit: 20
+
+# SEO settings
+google_analytics: # Add your GA tracking ID if you want analytics
