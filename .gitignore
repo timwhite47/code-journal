@@ -23,3 +23,10 @@ code/**/node_modules/
 
 # OS files
 Thumbs.db
+**/.env
+outlines/
+
+# Rust build artifacts
+target/
+Cargo.lock
+*.so
