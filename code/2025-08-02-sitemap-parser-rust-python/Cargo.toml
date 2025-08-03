@@ -1,0 +1,22 @@
+[package]
+name = "sitemap-parser-rust"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "rust_parser"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.25.1", features = ["abi3-py38"] }
+tokio = { version = "1.47.1", features = ["full"] }
+reqwest = { version = "0.12.22", features = ["json"] }
+quick-xml = "0.38.0"
+url = "2.4"
+log = "0.4"
+pyo3-log = "0.12.4"
+futures = "0.3.31"
+
+[dependencies.pyo3-async-runtimes]
+version = "0.25.0"
+features = ["tokio-runtime"]

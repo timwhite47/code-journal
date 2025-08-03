@@ -1,0 +1,45 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "sitemap-parser-showdown"
+version = "0.1.0"
+description = "Performance comparison between pure Python and Rust+Python sitemap parsing"
+authors = [{name = "Tim White", email = "tim@timwhite.ninja"}]
+requires-python = ">=3.8"
+dependencies = [
+    "aiohttp>=3.8.0",
+]
+
+[tool.poetry]
+name = "sitemap-parser-showdown"
+version = "0.1.0"
+description = "Performance comparison between pure Python and Rust+Python sitemap parsing"
+authors = ["Tim White <tim@timwhite.ninja>"]
+readme = "README.md"
+packages = [{include = "sitemap_parser_showdown"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+aiohttp = "^3.8.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0.0"
+pytest-asyncio = "^0.21.0"
+pytest-benchmark = "^4.0.0"
+black = "^22.0.0"
+isort = "^5.10.0"
+maturin = "^1.0.0"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+module-name = "sitemap_parser_showdown.rust_parser"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.isort]
+profile = "black"
+line_length = 88
